@@ -1,0 +1,11 @@
+{
+  "name": "tech-bought-my-soul",
+  "version": "0.2.0",
+  "description": "Clickable predicted replies. A companion to i-have-adhd: tap the next message instead of typing it.",
+  "author": { "name": "5carl", "url": "https://github.com/5carl" },
+  "homepage": "https://github.com/5carl/tech-bought-my-soul",
+  "repository": "https://github.com/5carl/tech-bought-my-soul",
+  "license": "MIT",
+  "keywords": ["adhd", "accessibility", "suggested-replies", "buttons", "paseo"],
+  "types": "./types/index.d.ts"
+}

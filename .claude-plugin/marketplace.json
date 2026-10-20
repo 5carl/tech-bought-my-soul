@@ -1,0 +1,14 @@
+{
+  "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
+  "name": "tech-bought-my-soul",
+  "description": "Clickable predicted replies. A companion to i-have-adhd.",
+  "owner": { "name": "5carl" },
+  "plugins": [
+    {
+      "name": "tech-bought-my-soul",
+      "description": "Tap the next message instead of typing it. Buttons above the prompt, predicted by Claude.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

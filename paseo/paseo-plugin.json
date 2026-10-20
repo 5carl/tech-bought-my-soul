@@ -1,0 +1,6 @@
+{
+  "id": "tech-bought-my-soul",
+  "requirements": {
+    "paseo": ">=0.9.1"
+  }
+}
