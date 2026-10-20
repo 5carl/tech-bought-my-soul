@@ -83,7 +83,7 @@ The rule lives in `hooks/register.tsx` (`RULE`), and the Paseo renderer lives in
 ## Requirements
 
 - Claude Code 2.1.296 or newer. The terminal buttons use Claude Code's early-access hooks-module API, so that part could change between releases.
-- Paseo 0.9.1 or newer for the Paseo client, with plugins turned on.
+- Paseo 0.11.0 or newer for the Paseo client, with plugins turned on.
 
 ## Credits
 

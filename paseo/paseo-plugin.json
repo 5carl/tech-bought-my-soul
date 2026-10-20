@@ -1,6 +1,9 @@
 {
   "id": "tech-bought-my-soul",
+  "name": "tech-bought-my-soul",
+  "description": "Turns Claude's predicted next replies into tappable buttons under each agent turn.",
+  "media": ["https://raw.githubusercontent.com/5carl/tech-bought-my-soul/main/assets/paseo.png"],
   "requirements": {
-    "paseo": ">=0.9.1"
+    "paseo": ">=0.11.0"
   }
 }
