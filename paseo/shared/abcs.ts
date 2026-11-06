@@ -9,9 +9,13 @@ const MAX = 4;
 export const ABCS_KIND = "abcs";
 export const abcsSchema = z.object({ options: z.array(z.string()).max(MAX) });
 
+// Paseo hands Codex replies to plugins HTML-escaped (&quot; for "), Claude's raw.
+const ENTITIES: Record<string, string> = { "&quot;": '"', "&#39;": "'", "&#x27;": "'", "&lt;": "<", "&gt;": ">", "&amp;": "&" };
+const unescapeHtml = (s: string) => s.replace(/&(?:quot|#39|#x27|lt|gt|amp);/g, (e) => ENTITIES[e]);
+
 export function parseAbcs(text: string): string[] {
   let last: string | undefined;
-  for (const m of text.matchAll(BLOCK)) last = m[1];
+  for (const m of unescapeHtml(text).matchAll(BLOCK)) last = m[1];
   if (!last) return [];
   try {
     const parsed: unknown = JSON.parse(last);
