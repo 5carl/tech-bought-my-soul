@@ -1,0 +1,12 @@
+{
+  "name": "tech-bought-my-soul",
+  "version": "0.1.0",
+  "description": "Parser for the [abcs] predicted-reply line, shared by the Claude Code mod, the Paseo plugin, and plugins that read the same line.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./abcs": "./paseo/shared/parse.ts"
+  },
+  "files": ["paseo/shared/parse.ts"],
+  "repository": { "type": "git", "url": "https://github.com/5carl/tech-bought-my-soul" }
+}
